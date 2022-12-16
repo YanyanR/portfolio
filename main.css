@@ -3,7 +3,8 @@
 body {
 	padding: 0;
 	margin: 0;
-	background: #84d4ea; 
+	background: #9de4f7; 
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /*--- navigation bar ---*/
@@ -26,7 +27,14 @@ body {
 }
 
 .nav-link:hover {
-	font-weight:bold;
+	/* font-weight: bold; */
+	text-shadow: 1px 0 0 currentColor;
+    color: #fff;
+}
+
+.navbar-brand:hover {
+	/* font-weight: bold; */
+	text-shadow: 1px 0 0 currentColor;
     color: #fff;
 }
 
@@ -39,7 +47,7 @@ body {
 .description {
 	text-align: center;
     height: auto;
-    padding: 4rem;
+    padding: 2rem;
 }
 
 .description h1 {
@@ -64,9 +72,10 @@ body {
 	color: #333;
 	font-size: 1.3rem;
 	font-weight: 700;
-	margin-bottom: 20px;
+	margin-top: 20px;
 	text-transform: uppercase;
-    height: 6rem;
+    height: 2rem;
+	text-align: center;
 }
 
 .features img {
@@ -83,4 +92,119 @@ body {
     border-width: 2px;
     border-style: solid;
     padding: 20px auto;
+	padding-bottom: 26px;
+	position: relative;
 }
+
+.bottom-button {
+	position: absolute;
+  	bottom: 0;
+  	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+html {
+	scroll-padding-top: 3.5rem;
+  }
+  
+  header {
+	padding-top: 9.5rem;
+	padding-bottom: 6rem;
+  }
+  
+  section {
+	padding-top: 9rem;
+	padding-bottom: 9rem;
+  }
+  
+  .caption {
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	text-align: left;
+	max-width: 90%;
+  }
+  
+  .sketch {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	max-width: 90%;
+	height: auto;
+  }
+  
+  .icon-and-title {
+	width: 90%;
+	margin-top: 2 rem;
+  }
+  
+  .icon {
+	display: inline-block;
+	width: 8%;
+  }
+  
+  .title-content {
+	display: inline-block;
+	width: 82%;
+  }
+  
+  
+  .bottom-space {
+	margin-bottom: 80px;
+  }
+  
+  
+  
+  /* First the Grid */
+  .gallery-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-gap: 1.5rem;
+	justify-items: center;
+	margin: 0;
+	padding: 0;
+  }
+  
+  /* The Picture Frame */
+  .gallery-frame {
+	padding: .5rem;
+	font-size: 1.2rem;
+	text-align: center;
+	background-color: #0f75a4;
+	color: #d9d9d9;
+  }
+  
+  /* The Images */
+  .gallery-img {
+	max-width: 100%;
+	height: 70%;
+	object-fit: cover;
+  }
+
+  .project-img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+
+  .skills {
+	text-align: center;
+	color:grey;
+	height: 2rem;
+  }
+
+  .intro-img{
+	float: left;
+	height: auto;
+	width: 30%;
+	max-width: 500px;
+	object-fit: contain;
+	border-radius: 50%;
+	margin: 20px;
+  }
+
+  .rq{
+	font-weight: bold;
+	text-align: center;
+	font-size: x-large;
+  }
